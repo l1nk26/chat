@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: midnightblue;
+}
+
+#message-box {
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    bottom: 2%;
+    margin-left: 2%;
+    display: flex;
+}
+
+input[type="text"] {
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 20%;
+    background-color: #666;
+    color: aliceblue;
+    font-weight: bold;
+    outline: none;
+    padding: 1%;
+}
+button {
+    width: 5%;
+    height: 100%;
+    border-radius: 25%;
+}
+
+.text-container {
+    display: flex;
+    margin-top: 1em;
+}
+
+.mensaje {
+    background-color: cadetblue;
+    padding: 1em;
+    display: inline;
+    border-radius: 1em;
+    color: antiquewhite;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.mensaje-enviado {
+    font-weight: bold;
+    background-color: cadetblue;
+    display: inline;
+    margin-left: auto;
+    border-radius: 1em;
+    padding: 1em;
+    color: antiquewhite;
+    font-size: medium;
+}

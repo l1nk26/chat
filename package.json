@@ -1,0 +1,24 @@
+{
+  "name": "chat_en_tiempo_real",
+  "version": "1.0.0",
+  "description": "proyecto_de_prueba",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "chat",
+    "tiempo_real",
+    "webSockerts"
+  ],
+  "author": "Fabian Tovar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "ws": "^8.16.0"
+  }
+}
