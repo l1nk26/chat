@@ -31,11 +31,11 @@ wss.on('connection', ws => {
 } );
 
 app.get('/', (req, res) => {
-    res.sendFile('./public/index.html');
+    res.sendFile(__dirname +'/public/login.html');
 });
 
-app.get('/chat', (req, res) => {
-    res.sendFile('./public/index.html');
+app.post('/chat.html', (req, res) => {
+    res.sendFile(__dirname + '/public/chat.html');
 });
 
 app.listen(port, () => {

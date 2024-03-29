@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Inicio de Sesión</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div>
-        <h1>Registrese o inicie sesion</h1>
-        <form action="get" >
-            <input type="text" name="username" id="user">
+    <div class="login-container">
+        <h1>Iniciar Sesión</h1>
+        <form action="/chat.html" method="post">
+            <input type="text" name="username" placeholder="Usuario" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
         </form>
+        <p>si no tiene cuenta haga click <a href="/sing-up.html">aqui</a></p>
     </div>
 </body>
 </html>

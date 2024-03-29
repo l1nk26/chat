@@ -2,47 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-    background-color: midnightblue;
+    background: linear-gradient(120deg, #003, #05f);
+    height: 100vh;
 }
 
 #message-box {
-    height: 5%;
+    height: 40px;
     width: 100%;
     position: fixed;
-    bottom: 2%;
-    margin-left: 2%;
+    bottom: 2vh;
     display: flex;
+    justify-content: center;
 }
 
-input[type="text"] {
-    width: 90%;
-    height: 100%;
+#texto {
+    width: 80%;
     border: none;
-    border-radius: 20%;
-    background-color: #666;
+    border-radius: 20px;
+    background-color: #55a;
     color: aliceblue;
     font-weight: bold;
     outline: none;
-    padding: 1%;
+    padding: 10px;
 }
 button {
-    width: 5%;
-    height: 100%;
-    border-radius: 25%;
+    width: 60px;
+    border-radius: 15px;
 }
 
 .text-container {
     display: flex;
-    margin-top: 1em;
+    margin-top: 1vh;
 }
 
 .mensaje {
     background-color: cadetblue;
-    padding: 1em;
-    display: inline;
+    padding: 25px;
+    max-width: 30%;
+    margin-left: 20px;
     border-radius: 1em;
     color: antiquewhite;
     font-size: medium;
@@ -50,12 +51,14 @@ button {
 }
 
 .mensaje-enviado {
+    max-width: 30%;
     font-weight: bold;
     background-color: cadetblue;
-    display: inline;
+    
+    margin-right: 20px;
     margin-left: auto;
     border-radius: 1em;
-    padding: 1em;
+    padding: 25px;
     color: antiquewhite;
     font-size: medium;
 }
