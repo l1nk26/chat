@@ -26,7 +26,6 @@ socket.onopen = event => {
     socket.onmessage = message => {
 
         message = JSON.parse(message.data);
-
         agregar_mensaje(message, "recibido");
     }
 

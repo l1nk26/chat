@@ -1,4 +1,5 @@
 const express = require("express");
+const body = require("body-parser")
 const app = express();
 const port = 3000;
 const WebSocket = require("ws");
@@ -21,7 +22,6 @@ wss.on('connection', ws => {
             if (i[1] == ws) {
                 continue;
             }
-
             i[1].send(JSON.stringify( {user_name: i[0], text:`${message}`} ));
         }
     } );
@@ -35,6 +35,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/chat.html', (req, res) => {
+    console.log(req.body);
+
     res.sendFile(__dirname + '/public/chat.html');
 });
 
