@@ -19,3 +19,16 @@ const getUserbyName = async (user) => {
     });
 };
 
+const appendUser = (user, password) => {
+    return new Promise((resolve, reject) => {
+        db.run(`INSERT INTO usuarios (name, password) VALUES ("${user}", "${password}")`,[] ,error => {
+            if (error) {
+                reject(error);
+            }
+            resolve(1);
+        });
+    });
+};
+
+
+module.exports = {getUserbyName, appendUser};
